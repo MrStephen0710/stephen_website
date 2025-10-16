@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- 文档类型声明：告诉浏览器这是HTML5文档 -->
+<html lang="zh-CN">
+<!-- 根标签：整个HTML文档的包裹标签，lang="zh-CN"表示页面主要语言是中文 -->
+<head>
+    <!-- 头部区域：存放页面元数据（不直接显示在页面上） -->
+    
+    <meta charset="UTF-8">
+    <!-- 元数据：指定页面字符编码为UTF-8（支持中文等多语言） -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 元数据：适配移动设备
+         width=device-width：让页面宽度等于设备屏幕宽度
+         initial-scale=1.0：初始缩放比例为1（不缩放） -->
+    
+    <title>个人网址介绍</title>
+    <!-- 页面标题：显示在浏览器标签页上，也是搜索引擎收录的重要信息 -->
+    
+    <style>
+        /* 内嵌CSS样式：用于美化页面样式 */
+        
+        /* 对body标签设置样式（页面整体内容区域） */
+        body {
+            font-family: Arial, sans-serif; /* 字体：优先Arial，无则用系统默认无衬线字体 */
+            max-width: 800px; /* 最大宽度800px，避免在宽屏上内容过宽 */
+            margin: 0 auto; /* 上下外边距0，左右自动（实现页面居中） */
+            padding: 20px; /* 内边距20px，内容与边框保持距离 */
+            line-height: 1.6; /* 行高1.6倍，文字更易读 */
+            background-color: #f0f2f5; /* 页面背景色（浅灰） */
+        }
+        
+        /* 对h1标签设置样式（主标题） */
+        h1 {
+            color: #1a73e8; /* 标题颜色（蓝色） */
+            text-align: center; /* 文字居中对齐 */
+            margin-bottom: 30px; /* 底部外边距30px，与下方内容拉开距离 */
+        }
+        
+        /* 对class为"intro"的标签设置样式（个人介绍区域） */
+        .intro {
+            background-color: white; /* 背景色白色 */
+            padding: 30px; /* 内边距30px */
+            border-radius: 10px; /* 圆角边框，弧度10px */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* 阴影效果：轻微立体感 */
+        }
+        
+        /* 对图片设置样式 */
+        .my-photo {
+            max-width: 200px; /* 图片最大宽度200px */
+            height: auto; /* 高度自动，保持图片比例不变 */
+            border-radius: 50%; /* 圆形图片（圆角弧度50%） */
+            display: block; /* 将图片转为块级元素，方便居中 */
+            margin: 0 auto 20px; /* 上下外边距20px，左右自动（图片居中） */
+            border: 3px solid #1a73e8; /* 边框：3px宽，蓝色实线 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 主体区域：页面可见内容都在这里 -->
+    
+    <h1>个人网址介绍</h1>
+    <!-- 主标题：显示页面主题 -->
+    
+    <div class="intro">
+        <!-- 个人介绍容器：用div包裹相关内容，方便统一设置样式 -->
+        
+        <!-- 个人照片（重点：图片添加方式） -->
+        <img src="xuxin.jpg.jpg" alt="我的照片" class="my-photo">
+        
+        <p>大家好！欢迎访问我的个人网址。</p>
+        <!-- 段落标签：用于显示文本内容 -->
+        
+        <p>我是一名非典型程序员，这个网址用于分享我的日常、学习笔记和兴趣爱好。</p>
+        
+        <p>你可以通过以下方式联系我：</p>
+        <!-- 无序列表：用于展示多条并列内容（前面带圆点） -->
+        <ul>
+            <li>邮箱:2284462146@qq.com</li>
+            <li>社交媒体：抖音号：Curry30yyds.hhy</li>
+            <!-- 超链接标签：<a>的href属性是链接地址，target="_blank"表示新窗口打开 -->
+        </ul>
+    </div>
+</body>
+</html>
